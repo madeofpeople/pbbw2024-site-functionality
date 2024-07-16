@@ -36,15 +36,15 @@ const TEMPLATE = [
 					className: 'link-group__image',
 					sizeSlug: 'medium',
 				},
-				
+
 			],
 			[
 				'core/paragraph',
 				{
 					className: 'link-group__content',
-					placeholder: __( 'Add content...', 'the-territory' ),
+					placeholder: __( 'Add content...', 'bpbw' ),
 				},
-				
+
 			]
 		]
 	],

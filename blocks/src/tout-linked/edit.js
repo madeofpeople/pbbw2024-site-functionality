@@ -29,9 +29,9 @@ const TEMPLATE = [
 		{
 			level: 3,
 			className: 'tout__title',
-			placeholder: __( 'Add Heading...', 'the-territory' ),
+			placeholder: __( 'Add Heading...', 'bpbw' ),
 		},
-		
+
 	],
 	[
 		'core/image',
@@ -39,7 +39,7 @@ const TEMPLATE = [
 			className: 'tout__image',
 			sizeSlug: 'full',
 		},
-		
+
 	]
 ];
 

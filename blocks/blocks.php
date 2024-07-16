@@ -7,11 +7,11 @@
  */
 namespace SiteFunctionality\Blocks;
 
-include_once \plugin_dir_path( __FILE__ ) . 'src/link-group/index.php';
+// include_once \plugin_dir_path( __FILE__ ) . 'src/link-group/index.php';
 include_once \plugin_dir_path( __FILE__ ) . 'src/page-header/index.php';
 include_once \plugin_dir_path( __FILE__ ) . 'src/page-nav/index.php';
 include_once \plugin_dir_path( __FILE__ ) . 'src/social-cards/index.php';
-include_once \plugin_dir_path( __FILE__ ) . 'src/tout/index.php';
+// include_once \plugin_dir_path( __FILE__ ) . 'src/tout/index.php';
 include_once \plugin_dir_path( __FILE__ ) . 'src/tout-linked/index.php';
 
 const TEMPLATE_PARAMS = array(
@@ -27,7 +27,7 @@ function get_template_params() {
 
 /**
  * Check if contains video
- * 
+ *
  * @link https://developer.wordpress.org/reference/functions/wp_get_attachment_url/
  *
  * @param array $media
@@ -62,11 +62,11 @@ function is_video( int $media_id, $formats = array( 'mp4', 'webm' ) ) {
 
 /**
  * Get data type
- * 
+ *
  * @link https://developer.wordpress.org/reference/functions/wp_get_attachment_url/
  *
  * @param integer $media_id
- * @return string 
+ * @return string
  */
 function get_data_type( int $media_id ) {
 	$media_attributes = \wp_get_attachment_url( $media_id );
@@ -165,7 +165,7 @@ function register_block_category( $block_categories, $block_editor_context ) {
 
 /**
  * Remove wpautop from blocks
- * 
+ *
  * @link https://developer.wordpress.org/reference/hooks/render_block/
  * @link https://developer.wordpress.org/reference/functions/wpautop/
  *

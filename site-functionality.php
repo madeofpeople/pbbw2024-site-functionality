@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:         Site Functions
+ * Plugin Name:         BPBW 2024 Site Functionality
  * Description:         Custom functions for site
  * Author:              Pea Lutz
  * Author URI:          https://pealutz.me

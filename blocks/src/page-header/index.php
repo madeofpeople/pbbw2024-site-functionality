@@ -22,13 +22,14 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 function render( $attributes, $content, $block ) {
     $args = array(
-        'class' => 'page-header'
+        'class' => 'page__header',
+		'id' => 'page__header'
     );
     $wrapper_attributes = \get_block_wrapper_attributes( $args );
 
     $output = '<div ' . $wrapper_attributes . '>';
 
-    foreach ( $block->inner_blocks as $inner_block ) { 
+    foreach ( $block->inner_blocks as $inner_block ) {
         $output .= \apply_filters( 'the_content', $inner_block->render() );
     }
 
