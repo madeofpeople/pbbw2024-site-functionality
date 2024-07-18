@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name:         BPBW 2024 Site Functionality
+ * Plugin Name:         PBBW 2024 Site Functionality
  * Description:         Custom functions for site
- * Author:              Pea Lutz
- * Author URI:          https://pealutz.me
+ * Author:              Thiago de Mello Bueno
+ * Author URI:          https://madeofpeople.org
  * Text Domain:         site-functionality
  * Domain Path:         /languages
  * Version:             1.0.0

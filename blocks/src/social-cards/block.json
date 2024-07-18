@@ -39,13 +39,13 @@
         "color": {
             "background": true,
             "text": true,
-            "gradients": false,
+            "gradients": [],
             "link": false
         },
         "customClassName": true,
         "defaultStylePicker": false,
         "__experimentalLayout": false,
-        "__experimentalStyle": false,
+        "__experimentalStyle": [],
         "__experimentalBorder": false
     },
     "example" : {
