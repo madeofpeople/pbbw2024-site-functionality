@@ -8,7 +8,6 @@
 namespace SiteFunctionality\PostTypes;
 
 use SiteFunctionality\Abstracts\Base;
-use SiteFunctionality\PostTypes\Press;
 use SiteFunctionality\PostTypes\Review;
 use SiteFunctionality\PostTypes\Social;
 
@@ -35,7 +34,6 @@ class PostTypes extends Base {
 	 * @return void
 	 */
 	public function init() {
-		new Press( $this->version, $this->plugin_name );
 		new Review( $this->version, $this->plugin_name );
 		new Social( $this->version, $this->plugin_name );
 
@@ -45,7 +43,7 @@ class PostTypes extends Base {
 	/**
 	 * Modify Post Types
 	 * If post type supports $feature, enable Page Links To
-	 * 
+	 *
 	 * @link https://wordpress.org/plugins/page-links-to/
 	 * @link https://github.com/markjaquith/page-links-to/blob/master/classes/plugin.php#L517-L519
 	 *

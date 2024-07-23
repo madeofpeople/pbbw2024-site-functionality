@@ -25,54 +25,39 @@ import './editor.scss';
 
 const TEMPLATE = [
 	[
-		'core/cover',
-		{
-			isParallax: true,
-			dimRatio: 0,
-			backgroundColor: 'rgba(128, 173, 108, 0.25)'
-		},
 		[
-			[
-				'core/heading',
-				{
-					placeholder: __( 'Add Heading...', 'site-functionality' ),
-					level: 3,
-					className: 'tout__title',
-				},
-				[],
-			],
-			[
-				'core/image',
-				{
-					placeholder: __( 'Add image...', 'site-functionality' ),
-					className: 'tout__image',
-				},
-				[],
-			],
-			[
-				'core/paragraph',
-				{
-					placeholder: __( 'Add content...', 'site-functionality' ),
-					className: 'tout__content',
-				},
-				[],
-			],
-		]
-	],
+			'core/image',
+			{
+				placeholder: __( 'Add image...', 'site-functionality' ),
+				className: 'tout__image',
+			},
+			[],
+		],
+		[
+			'core/heading',
+			{
+				placeholder: __( 'Add Heading...', 'site-functionality' ),
+				level: 3,
+				className: 'tout__title',
+			},
+			[],
+		],
+		[
+			'core/paragraph',
+			{
+				placeholder: __( 'Add content...', 'site-functionality' ),
+				className: 'tout__content',
+			},
+			[],
+		],
+	]
 ];
 
 const ALLOWED_BLOCKS = [
-	'core/cover',
-	'core/group', 
-	'core/columns', 
-	'getwid/section',
 	'core/heading',
 	'core/paragraph',
 	'core/image',
-	'core/quote',
 	'core/buttons',
-	'core/embed',
-	'core/video'
 ];
 
 const NEW_TAB_REL = 'noreferrer noopener';

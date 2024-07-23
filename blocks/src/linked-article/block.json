@@ -2,14 +2,13 @@
     "apiVersion": 2,
     "version": "1.0.0",
     "textdomain": "site-functionality",
-    "name": "site-functionality/tout",
-    "title": "Tout",
+    "name": "site-functionality/linked-article",
+    "title": "Linked Article",
     "category": "touts",
     "collection": "site-functionality",
-    "description": "Display a tout on page",
+    "description": "Display a linked article",
     "keywords": [
-        "callout",
-        "tout"
+        "article"
     ],
     "attributes": {
         "url": {
@@ -42,19 +41,17 @@
         "customClassName": true,
         "defaultStylePicker": false,
         "__experimentalLayout": false,
-        "__experimentalStyle": false,
+        "__experimentalStyle": [],
         "__experimentalBorder": false
     },
     "example" : {
         "attributes": {
-            "className": "tout"
+            "className": "article"
         },
         "innerBlocks": [
             {
-                "name": "core/cover",
+                "name": "core/image",
                 "attributes": {
-                    "isParallax": true,
-                    "dimRatio": 0,
                     "url": "https://images.unsplash.com/photo-1520991323542-c159d7282b9f",
                     "backgroundColor": "rgba(128, 173, 108, 0.25)"
                 },
@@ -63,7 +60,7 @@
                         "name": "core/heading",
                         "attributes": {
                             "level": 2,
-                            "className": "tout__heading",
+                            "className": "article__heading",
                             "textColor": "white",
                             "content": "Indigenous-led Monitoring and Surveillance"
                         }
@@ -71,7 +68,7 @@
                     {
                         "name": "core/paragraph",
                         "attributes": {
-                            "className": "tout__content",
+                            "className": "article__content",
                             "textColor": "white",
                             "content": "We, are calling on governments and businesses to work together to finance and empower indigenous-led monitoring for deforestation-free supply chains."
                         }
