@@ -8,7 +8,6 @@
 namespace SiteFunctionality\PostTypes;
 
 use SiteFunctionality\Abstracts\Base;
-use SiteFunctionality\PostTypes\Review;
 use SiteFunctionality\PostTypes\Social;
 
 // Exit if accessed directly.
@@ -34,7 +33,6 @@ class PostTypes extends Base {
 	 * @return void
 	 */
 	public function init() {
-		new Review( $this->version, $this->plugin_name );
 		new Social( $this->version, $this->plugin_name );
 
 		\add_filter( 'page-links-to-post-types', array( $this, 'external_links' ) );

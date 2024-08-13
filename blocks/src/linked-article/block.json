@@ -23,7 +23,7 @@
         },
         "className": {
             "type": "string",
-            "default": "tout"
+            "default": "linked-article"
         },
         "anchor": {
 			"type": "string"
@@ -50,31 +50,29 @@
         },
         "innerBlocks": [
             {
-                "name": "core/image",
-                "attributes": {
-                    "url": "https://images.unsplash.com/photo-1520991323542-c159d7282b9f",
-                    "backgroundColor": "rgba(128, 173, 108, 0.25)"
-                },
-                "innerBlocks": [
-                    {
-                        "name": "core/heading",
-                        "attributes": {
-                            "level": 2,
-                            "className": "article__heading",
-                            "textColor": "white",
-                            "content": "Indigenous-led Monitoring and Surveillance"
-                        }
-                    },
-                    {
-                        "name": "core/paragraph",
-                        "attributes": {
-                            "className": "article__content",
-                            "textColor": "white",
-                            "content": "We, are calling on governments and businesses to work together to finance and empower indigenous-led monitoring for deforestation-free supply chains."
-                        }
-                    }
-                ]
-            }
+				"name": "core/image",
+				"attributes": {
+					"url": "https://images.unsplash.com/photo-1520991323542-c159d7282b9f",
+					"backgroundColor": "rgba(128, 173, 108, 0.25)"
+				}
+			},
+			{
+				"name": "core/heading",
+				"attributes": {
+					"level": 2,
+					"className": "article__heading",
+					"textColor": "white",
+					"content": "Indigenous-led Monitoring and Surveillance"
+				}
+			},
+			{
+				"name": "core/paragraph",
+				"attributes": {
+					"className": "article__content",
+					"textColor": "white",
+					"content": "We, are calling on governments and businesses to work together to finance and empower indigenous-led monitoring for deforestation-free supply chains."
+				}
+			}
         ]
     },
     "style": "file:../../build/style-index.css",

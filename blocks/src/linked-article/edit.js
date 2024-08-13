@@ -25,38 +25,46 @@ import './editor.scss';
 
 const TEMPLATE = [
 	[
+		'core/image',
+		{
+			placeholder: __( 'Add image...', 'site-functionality' ),
+			className: 'tout__image',
+		},
+		[],
+	],
+	[
+		'core/group',
+		{
+			className: 'content__text'
+		},
 		[
-			'core/image',
-			{
-				placeholder: __( 'Add image...', 'site-functionality' ),
-				className: 'tout__image',
-			},
-			[],
-		],
-		[
-			'core/heading',
-			{
-				placeholder: __( 'Add Heading...', 'site-functionality' ),
-				level: 3,
-				className: 'tout__title',
-			},
-			[],
-		],
-		[
-			'core/paragraph',
-			{
-				placeholder: __( 'Add content...', 'site-functionality' ),
-				className: 'tout__content',
-			},
-			[],
-		],
+			[
+				'core/heading',
+				{
+					placeholder: __( 'Add Heading...', 'site-functionality' ),
+					level: 3,
+					className: 'tout__title',
+				},
+				[],
+			],
+			[
+				'core/paragraph',
+				{
+					placeholder: __( 'Add content...', 'site-functionality' ),
+					className: 'tout__content',
+				},
+				[],
+			]
+		]
 	]
+
 ];
 
 const ALLOWED_BLOCKS = [
 	'core/heading',
 	'core/paragraph',
 	'core/image',
+	'core/group',
 	'core/buttons',
 ];
 

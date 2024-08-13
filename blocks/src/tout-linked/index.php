@@ -28,16 +28,16 @@ function render( $attributes, $content, $block ) {
     }
     $wrapper_attributes = \get_block_wrapper_attributes( $args );
 
-    $output = '<div ' . $wrapper_attributes . '>';
+    $output = '<div ' . $wrapper_attributes . '><div class="conten-wrapper">';
 
     if( isset( $attributes['url'] ) && $attributes['url'] ) {
-        $output .= sprintf( '<a href="%1$s"%2$s class="tout__link">', 
-            \esc_url( $attributes['url'] ), 
+        $output .= sprintf( '<a href="%1$s"%2$s class="tout__link">',
+            \esc_url( $attributes['url'] ),
             ( isset( $attributes['linkTarget'] ) && $attributes['linkTarget'] ) ? ' target="' . $attributes['linkTarget'] . '"' : ''
         );
     }
 
-    foreach ( $block->inner_blocks as $inner_block ) { 
+    foreach ( $block->inner_blocks as $inner_block ) {
         $output .= \apply_filters( 'the_content', $inner_block->render() );
     }
 
@@ -45,7 +45,7 @@ function render( $attributes, $content, $block ) {
         $output .= '</a>';
     }
 
-    $output .= '</div>';
+    $output .= '</div></div>';
 
     return $output;
 }
