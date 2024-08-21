@@ -27,6 +27,5 @@
 		"uuid": "^8.3.2"
 	},
 	"dependencies": {
-		"slick-carousel": "^1.8.1"
 	}
 }
